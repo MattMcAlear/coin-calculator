@@ -27,7 +27,7 @@ $totalProfit = $Coin->getTotalPrice()
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     </head>
-	<body>
+	<body style="background: none;">
         <h1>Coin Calculator</h1>
         <form method="post">
 	        <table class="table-striped table-bordered table-hover">
@@ -88,7 +88,7 @@ $totalProfit = $Coin->getTotalPrice()
 	        	</tr>
 	        	<tr>
 	        		<th>Daily Power Cost</th>
-	        		<td><input type="text" class="form-control" name="powerCost" id="powerCost" value="<?php echo $_POST['powerCost']; ?>" disabled  /></td>
+	        		<td><input type="text" class="form-control" name="powerCost" id="powerCost" value="<?php echo $_POST['powerCost']; ?>" readonly  /></td>
 	        	</tr>
 	        	<tr>
 	        		<th>Apply Tax</th>
